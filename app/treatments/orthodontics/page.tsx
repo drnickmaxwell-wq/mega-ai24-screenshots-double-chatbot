@@ -1,0 +1,2 @@
+export const metadata={ title:"Orthodontics | St Mary’s House" };
+export default function Page(){return (<main className="mx-auto max-w-[var(--content)] px-6 py-16"><h1 className="text-3xl font-semibold">Orthodontics | St Mary’s House</h1><p className="opacity-80 mt-3">Content coming soon.</p></main>);}
