@@ -1,8 +1,8 @@
-
 "use client";
 import dynamic from "next/dynamic";
 import ShimmerText from "@/components/fx/ShimmerText";
 const WaveBackground = dynamic(()=>import("@/components/fx/WaveBackground").then(m=>m.default??(m as any).WaveBackground),{ ssr:false });
+
 export default function CTASectionAi24(){
   return (
     <section className="relative py-20 overflow-hidden">

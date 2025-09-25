@@ -8,6 +8,7 @@ import TreatmentsLux from "@/components/proposals/ai24/TreatmentsLux";
 import TestimonialsCarousel from "@/components/proposals/ai24/TestimonialsCarousel";
 import GradientBelt from "@/components/proposals/ai24/GradientBelt";
 import ShimmerText from "@/components/fx/ShimmerText";
+import SeoHomeJsonLd from "@/components/proposals/ai24/SeoHomeJsonLd";
 
 const Header     = dynamic(() => import("@/components/proposals/ai24/HeaderAi24").then(m => m.default ?? (m as any).HeaderAi24), { ssr:false });
 const Footer     = dynamic(() => import("@/components/proposals/ai24/FooterAi24").then(m => m.default ?? (m as any).FooterAi24), { ssr:false });
