@@ -1,8 +1,10 @@
-
 "use client";
-import SeoHomeJsonLd from "@/components/proposals/ai24/SeoHomeJsonLd";
 import dynamic from "next/dynamic";
+
+// ---- keep this exactly once ----
 import SeoHomeJsonLd from "@/components/proposals/ai24/SeoHomeJsonLd";
+// --------------------------------
+
 import HeroAurora from "@/components/proposals/ai24/HeroAurora";
 import CTASection from "@/components/proposals/ai24/CTASectionAi24";
 import TreatmentsLux from "@/components/proposals/ai24/TreatmentsLux";
@@ -15,6 +17,7 @@ const Footer     = dynamic(() => import("@/components/proposals/ai24/FooterAi24"
 const ActionDock = dynamic(() => import("@/components/layout/ActionDock").then(m => m.default ?? (m as any).ActionDock), { ssr:false });
 const Hero       = dynamic(() => import("@/components/hero/HeroVideo").then(m => m.default ?? (m as any).HeroVideo), { ssr:false });
 const Features   = dynamic(() => import("@/components/sections/FeaturesSection").then(m => m.default ?? (m as any).FeaturesSection), { ssr:false });
+
 
 export default function Page() {
   return (
