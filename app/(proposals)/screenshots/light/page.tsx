@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import { SMHLayouts, SMHTokens } from "@/lib/design/smh.design";
 import { HeroSection, CardsGrid, CTASection } from "@/components/renderer/SectionRenderer";
+import ChatDockScreenshots from "@/components/proposals/screenshots/ChatDockScreenshots";
 
 // robust dynamic imports (default OR named export)
 const Header     = dynamic(() => import("@/components/layout/Header").then(m => m.default ?? (m as any).Header), { ssr:false });
@@ -23,6 +24,9 @@ export default function Page() {
       })}
       <Footer />
       <ActionDock />
+
+      {/* Screenshots-only chatbot */}
+      <ChatDockScreenshots />
     </>
   );
 }
